@@ -97,6 +97,6 @@
     "release": "build -m -p never",
     "start": "gulp start",
     "start-logging": "DEBUG=*,-bittorrent-dht $(node -e \"console.log(require('electron'))\") -r trace ./app",
-    "watch": "gulp start-watch"
+    "watch": "ELECTRON_ENABLE_STACK_DUMPING=true ELECTRON_ENABLE_LOGGING=true gulp start-watch"
   }
 }
